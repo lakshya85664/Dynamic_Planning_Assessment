@@ -1,0 +1,45 @@
+{
+  "task": 2,
+  "title": "Sequential execution",
+  "action_plan": [
+    "take_backroad",
+    "park",
+    "walk_to_office"
+  ],
+  "final_state": [
+    "at_city",
+    "at_home",
+    "at_office",
+    "parked"
+  ],
+  "execution_log": [
+    {
+      "step": 1,
+      "action": "take_backroad",
+      "state": [
+        "at_city",
+        "at_home"
+      ]
+    },
+    {
+      "step": 2,
+      "action": "park",
+      "state": [
+        "at_city",
+        "at_home",
+        "parked"
+      ]
+    },
+    {
+      "step": 3,
+      "action": "walk_to_office",
+      "state": [
+        "at_city",
+        "at_home",
+        "at_office",
+        "parked"
+      ]
+    }
+  ],
+  "goal_reached": true
+}

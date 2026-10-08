@@ -1,0 +1,18 @@
+{
+  "task": 1,
+  "title": "Breadth-first planning",
+  "start": [
+    "at_home"
+  ],
+  "goal": [
+    "at_office"
+  ],
+  "plan": [
+    "take_backroad",
+    "park",
+    "walk_to_office"
+  ],
+  "plan_length": 3,
+  "impossible_goal_result": null,
+  "planner_type": "breadth-first search"
+}

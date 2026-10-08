@@ -1,0 +1,84 @@
+{
+  "task": 3,
+  "title": "Dynamic replanning",
+  "event": {
+    "step": 3,
+    "removed_action": "walk_to_office"
+  },
+  "actions_available_before_event": [
+    "call_shuttle",
+    "park",
+    "prepare_shuttle",
+    "take_backroad",
+    "take_highway",
+    "walk_to_office"
+  ],
+  "result": {
+    "ok": true,
+    "state": [
+      "at_city",
+      "at_home",
+      "at_office",
+      "parked",
+      "shuttle_ready"
+    ],
+    "log": [
+      {
+        "event": "action",
+        "step": 1,
+        "action": "take_backroad",
+        "state": [
+          "at_city",
+          "at_home"
+        ]
+      },
+      {
+        "event": "action",
+        "step": 2,
+        "action": "park",
+        "state": [
+          "at_city",
+          "at_home",
+          "parked"
+        ]
+      },
+      {
+        "event": "replan",
+        "step": 3,
+        "reason": "action 'walk_to_office' is no longer available",
+        "replan": 1,
+        "state": [
+          "at_city",
+          "at_home",
+          "parked"
+        ]
+      },
+      {
+        "event": "action",
+        "step": 3,
+        "action": "prepare_shuttle",
+        "state": [
+          "at_city",
+          "at_home",
+          "parked",
+          "shuttle_ready"
+        ]
+      },
+      {
+        "event": "action",
+        "step": 4,
+        "action": "call_shuttle",
+        "state": [
+          "at_city",
+          "at_home",
+          "at_office",
+          "parked",
+          "shuttle_ready"
+        ]
+      }
+    ],
+    "replans": 1
+  },
+  "replans": 1,
+  "goal_reached": true
+}

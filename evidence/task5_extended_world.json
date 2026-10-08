@@ -1,0 +1,79 @@
+{
+  "task": 5,
+  "title": "Extended world and new goal",
+  "new_actions": [
+    "enter_building",
+    "go_to_meeting_room"
+  ],
+  "new_goal": [
+    "at_meeting_room"
+  ],
+  "plan": [
+    "take_backroad",
+    "park",
+    "walk_to_office",
+    "enter_building",
+    "go_to_meeting_room"
+  ],
+  "final_state": [
+    "at_city",
+    "at_home",
+    "at_meeting_room",
+    "at_office",
+    "inside_building",
+    "parked"
+  ],
+  "execution_log": [
+    {
+      "step": 1,
+      "action": "take_backroad",
+      "state": [
+        "at_city",
+        "at_home"
+      ]
+    },
+    {
+      "step": 2,
+      "action": "park",
+      "state": [
+        "at_city",
+        "at_home",
+        "parked"
+      ]
+    },
+    {
+      "step": 3,
+      "action": "walk_to_office",
+      "state": [
+        "at_city",
+        "at_home",
+        "at_office",
+        "parked"
+      ]
+    },
+    {
+      "step": 4,
+      "action": "enter_building",
+      "state": [
+        "at_city",
+        "at_home",
+        "at_office",
+        "inside_building",
+        "parked"
+      ]
+    },
+    {
+      "step": 5,
+      "action": "go_to_meeting_room",
+      "state": [
+        "at_city",
+        "at_home",
+        "at_meeting_room",
+        "at_office",
+        "inside_building",
+        "parked"
+      ]
+    }
+  ],
+  "goal_reached": true
+}

@@ -1,0 +1,46 @@
+{
+  "task": 4,
+  "title": "Replan limits and safe failure",
+  "zero_replan_limit": {
+    "result": {
+      "ok": false,
+      "state": [
+        "at_home"
+      ],
+      "log": [
+        {
+          "event": "replan",
+          "step": 1,
+          "reason": "action 'take_backroad' is no longer available",
+          "replan": 1,
+          "state": [
+            "at_home"
+          ]
+        }
+      ],
+      "replans": 1
+    },
+    "safe_failure": true
+  },
+  "no_replacement_plan": {
+    "result": {
+      "ok": false,
+      "state": [
+        "at_home"
+      ],
+      "log": [
+        {
+          "event": "replan",
+          "step": 1,
+          "reason": "action 'take_backroad' is no longer available",
+          "replan": 1,
+          "state": [
+            "at_home"
+          ]
+        }
+      ],
+      "replans": 1
+    },
+    "safe_failure": true
+  }
+}
